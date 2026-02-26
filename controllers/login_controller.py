@@ -7,4 +7,15 @@ class LoginController:
         self.window.btn_login.clicked.connect(self.handle_login)
     
     def handle_login(self):
-        print("Login button clicked 👌")
+        username = self.window.txt_username.text()
+        password = self.window.txt_password.text()
+        if username == "admin" and password == "123":
+            self.window.login_successfull.emit()
+            print("Login correcto 👌")
+        else:
+            #print("Login incorrecto ❌")
+            QtWidgets.QMessageBox.warning(
+                self.window,
+                "Abarrotes TEC - ERROR",
+                "Login incorrecto ❌"
+            )

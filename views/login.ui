@@ -94,7 +94,7 @@ margin:0px;
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLineEdit" name="txt_username"/>
        </item>
        <item>
         <widget class="QLabel" name="label_3">
@@ -104,7 +104,7 @@ margin:0px;
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_2">
+        <widget class="QLineEdit" name="txt_password">
          <property name="echoMode">
           <enum>QLineEdit::Password</enum>
          </property>
